@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="{%static 'css/main.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s003" style="min-height:500vh">
+      <p style = "position: absolute ; top:30px ; left: 620px;font-size: 50px ; font-family:serif; color:cyan">Result</p>
+      <table border="3px" style="width:800px;position: absolute;left:280px;top:200px" class="table table-striped" >
+          <thead>
+            <tr>
+                <th>Words</th>
+                <th>Suggestion & Probability</th>
+            </tr>
+          </thead>
+          <tbody>
+                {% for x, y in text.items %}
+            <tr>
+                {% if x|length == 1%}
+                    <td>{{x}}</td>
+                    <td>{{x}}</td>
+                {% else %}
+                    {% if y|length == 0%}
+                        <td>{{x}}</td>
+                        <td>No Suggestion</td>
+                    {% else %}
+                        <td>{{x}}</td>
+                        <td>{{y}}</td>
+                    {% endif %}
+                {% endif %}
+            </tr>
+            {% endfor %}
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+      </table>
+    </div>
+    <script src="{%static 'js/extention/choices.js'%}"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

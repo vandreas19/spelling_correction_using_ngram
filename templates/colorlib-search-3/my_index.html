@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="{%static 'css/main.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s003" style="min-height: 2000000vh">
+      <p style = "position: absolute ; top:10px ; left: 615px;font-size: 50px ; font-family:serif; color:cyan">Result</p>
+      <table border="3px" style="width:800px;position: absolute;left:260px;top:150px" class="table table-striped" >
+          <thead>
+            <tr>
+                <th>Bigram Term</th>
+                <th>Index</th>
+            </tr>
+          </thead>
+          {% for x in index %}
+          <tbody>
+            <tr>
+                <td>{{x.0}}</td>
+                <td>{{x.1}}</td>
+            </tr>
+          </tbody>
+          {% endfor %}
+          <tfoot>
+
+          </tfoot>
+      </table>
+    </div>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
