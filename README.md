@@ -11,3 +11,11 @@ this is the flow of our spelling correction :
 - look up into bigram index
 - count the probability using jaccard
 - return the suggestion word if probability more than or equal 0.5
+
+
+
+our Team : 
+- Adhyka Surya Hulu
+- Joe Allen
+- Vicky Andreas
+- Theresia Dimpu
