@@ -819,12 +819,30 @@ legend {
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Poppins', sans-serif;
-  background-color: #a598ee;
+  background-image: url('https://cdn-images-1.medium.com/max/1200/1*034K9ZcryXJ7-sD0vbjmbQ.jpeg/');
+  background-color:blueviolet;
   background-size: cover;
   background-position: center center;
   padding: 15px;
 }
 
+.s003hasil{
+  min-height: 500vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Times New Roman', sans-serif;
+  /* background-image: url("https://cdn-images-1.medium.com/max/1200/1*034K9ZcryXJ7-sD0vbjmbQ.jpeg/"); */
+  background-color:white;
+  color: #d81f1f; 
+  background-size: 2000px 15000px;
+  background-repeat: no-repeat;
+  background-position: top top;
+  padding: 15px;
+}
 .s003 form {
   width: 100%;
   max-width: 790px;

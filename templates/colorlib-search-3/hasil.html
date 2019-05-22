@@ -9,9 +9,9 @@
     <link href="{%static 'css/main.css' %}" rel="stylesheet" />
   </head>
   <body>
-    <div class="s003" style="min-height:500vh">
-      <p style = "position: absolute ; top:30px ; left: 620px;font-size: 50px ; font-family:serif; color:cyan">Result</p>
-      <table border="3px" style="width:800px;position: absolute;left:280px;top:200px" class="table table-striped" >
+    <div class="s003hasil">
+      <p style = "position: absolute ; top:-10px ; left: 620px;font-size: 50px ; font-family:serif; color:rebeccapurple">Result</p>
+      <table border="3px" style="width:1200px;position: absolute;left:70px;top:100px;font-size: 20px" class="table table-striped" >
           <thead>
             <tr>
                 <th>Words</th>
@@ -22,15 +22,15 @@
                 {% for x, y in text.items %}
             <tr>
                 {% if x|length == 1%}
-                    <td>{{x}}</td>
-                    <td>{{x}}</td>
+                    <td style="color:blue">{{x}}</td>
+                    <td style="color:blue">{{x}}</td>
                 {% else %}
                     {% if y|length == 0%}
                         <td>{{x}}</td>
                         <td>No Suggestion</td>
                     {% else %}
-                        <td>{{x}}</td>
-                        <td>{{y}}</td>
+                        <td style="color:blue">{{x}}</td>
+                        <td style="color:blue">{{y}}</td>
                     {% endif %}
                 {% endif %}
             </tr>

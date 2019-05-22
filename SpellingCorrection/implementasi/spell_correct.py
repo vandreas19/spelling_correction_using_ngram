@@ -58,7 +58,7 @@ def searching(source, data):
     return mydict
 #%%
 #jaccard coefficient
-#return suggestion word if jaccard probability = 0,5
+#return suggestion word if jaccard probability = 0,3
 def reduct_suggestion_word_using_jaccard(source, data , key = 0.3):
     mydic = searching(source, data)
     res = {}

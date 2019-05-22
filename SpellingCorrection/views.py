@@ -5,7 +5,7 @@ from SpellingCorrection.implementasi import spell_correct
 
 def ok(request):
     if request.method == 'POST':
-        text = request.POST['input']
+        text = request.POST['inputs']
         res = spell_correct.main(text)
         cont = {'text' : res}
         return render(request,"colorlib-search-3/hasil.html", cont)

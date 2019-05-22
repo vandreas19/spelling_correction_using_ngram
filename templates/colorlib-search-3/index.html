@@ -11,12 +11,12 @@
   <body>
     <div class="s003" style="min-height: 100vh">
       <div class="col-md-12"></div>
-      <p style = "position: relative ; bottom:200px ; left: 410px;font-size: 50px ; font-family:serif; color:cyan">Spelling Correction Using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N-Gram Index</p>
+      <p style = "position: relative ; bottom:200px ; left: 410px;font-size: 50px ; font-family:serif; color:black">Spelling Correction Using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N-Gram Index</p>
       <form action = "" method = "POST">
         {% csrf_token %}
         <div class="inner-form" style="position:relative ; left :-280px;bottom: 30px">
           <div class="input-field second-wrap">
-            <input id="search" name = "input" type="text" placeholder="Enter Keywords?" required />
+            <input id="search" name = "inputs" type="text" placeholder="Enter Your Query" required/>
           </div>
           <div class="input-field third-wrap">
             <button class="btn-search" type="submit">
@@ -29,7 +29,7 @@
       </form>       
     </div>
     <form action="/ngram" style="position:absolute;top:390px;left: 615px; border-width: 10px ">
-      <input type="submit" value="My Bigram Index" />
+      <input type="submit" value="Bigram Index" />
     </form>   
     <script>
       const choices = new Choices('[data-trigger]',
