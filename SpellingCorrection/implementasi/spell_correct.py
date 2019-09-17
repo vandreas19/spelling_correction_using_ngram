@@ -1,4 +1,4 @@
-#OK
+#O
 import re
 from collections import Counter
 import string
@@ -91,5 +91,7 @@ def indexing():
     w = gen_bigrams_indexing(data_uniq)
     w = sorted(w.items())
     return w
+
+#TAMBAH
 
 #%%
